@@ -15,7 +15,7 @@ alert("Great, " + userColor + " is my favorite color too!")
 var DaysLM = Number(prompt("How many days will you be renting The little mermaid for?"));
 var DaysBB =  Number(prompt("How many days will you be renting Brother Breas for?"));
 var DaysH =  Number(prompt("How many days will you be renting Hurcules for?"));
-var total = Number(alert("Your total will be " + (DaysLM * 3 + DaysBB * 3 + DaysH * 3)))
+var total = Number(alert("Your total will be $" + (DaysLM * 3 + DaysBB * 3 + DaysH * 3)))
 
 var Google = Number(prompt("How hours did you work ar google this week?"))
 var Amazon = Number(prompt("How hours did you work ar Amazon this week?"))
@@ -38,7 +38,7 @@ else {
 // part 4
 
 var Offer = confirm("Is your offer valid?");
-var Items = confirm("do you have more than two items?");
+var Items = confirm("do you have more than 2 items?");
 var Premium = confirm("Are you a premium member");
 var valid = alert(Offer && (Items || Premium))
 
