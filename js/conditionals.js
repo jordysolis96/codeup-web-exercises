@@ -7,9 +7,9 @@
  * Create a function named `analyzeColor` that accepts a string that is a color
  * name as input. This function should return a message that related to that
  * color. Only worry about the colors defined below, if the color passed is not
- * one of the ones defined below, return a message that says so
+ *one of the ones defined below, return a message that says so
  *
- * Example:
+ /* Example:
  *  > analyzeColor('blue') // returns "blue is the color of the sky"
  *  > analyzeColor('red') // returns "Strawberries are red"
  *  > analyzeColor('cyan') // returns "I don't know anything about cyan"
@@ -20,6 +20,12 @@
  * console.logging the function's return value
  */
 
+function analyzecolor(input){
+    if(input === "blue"){
+        return "blue is the color of the sky"
+    }
+}
+
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
@@ -27,6 +33,7 @@
 //                  will contain a different color every time the page loads)
 var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 var randomColor = colors[Math.floor(Math.random() * colors.length)];
+
 /**
  * TODO:
  * Pass the `randomColor` variable to your function and console.log the results.
