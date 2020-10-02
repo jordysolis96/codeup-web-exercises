@@ -20,8 +20,8 @@
  * console.logging the function's return value
  */
 
-function analyzecolor(input){
-    if(input === "blue"){
+function analyzeColor(input) {
+    if (input === "blue") {
         return "blue is the color of the sky"
     }
 }
@@ -39,6 +39,8 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Pass the `randomColor` variable to your function and console.log the results.
  * You should see a different message every time you refresh the page
  */
+console.log("random color is: " + randomColor);
+console.log(analyzeColor(randomColor));
 
 /**
  * TODO:
@@ -52,7 +54,38 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * function to show it to the user.
  */
 
-/* ########################################################################## */
+function analyzeColorSwitch(color){
+	switch (color) {
+		case "blue":
+			return "blue is the color of the sky";
+		case "red":
+			return "strawberries are red";
+		case "cyan":
+			return "I dont know anything about cyan";
+		default:
+			return "You're just making up colors now!!!!";
+	}
+}
+function analyzeColorSwitch(color){
+	var colorMessage;
+	switch (color) {
+		case "blue":
+			colorMessage =  "blue is the color of the sky";
+			break;
+		case "red":
+			colorMessage = "strawberries are red";
+			break;
+		case "cyan":
+			colorMessage = "I dont know anything about cyan";
+			break;
+		default:
+			colorMessage = "You're just making up colors now!!!!";
+			break;
+	}
+	return colorMessage;
+}
+console.log(analyzeColorSwitch(randomColor));
+
 
 /**
  * TODO:
@@ -73,6 +106,33 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
+function calculateTotal(luckyNumber, totalAmount){
+    var discountRate = 0;
+	switch(luckyNumber){
+        case 0:
+            discountRate = 0;
+            break;
+        case 1:
+            discountRate = .1;
+            break;
+        case 2:
+            discountRate = .25;
+            break;
+        case 3:
+            discountRate = .35;
+            break;
+        case 4:
+            discountRate = .50;
+            break;
+        case 5:
+            discountRate = 1;
+            break;
+    }
+	return totalAmount - (totalAmount * discountRate);
+}
+console.log(calculateTotal(0, 100)); // returns 100
+console.log(calculateTotal(4, 100)); // returns 50
+console.log(calculateTotal(5, 100)); // returns 0
 
 /**
  * TODO:
@@ -82,8 +142,11 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-// var luckyNumber = Math.floor(Math.random() * 6);
-
+var luckyNumber = Math.floor(Math.random() * 6);
+console.log(luckyNumber);
+var totalBillPrompt = parseFloat(prompt("What is your total bill?"));
+var finalAmount = calculateTotal(luckyNumber, totalBillPrompt);
+alert("Your lucky number is: " + luckyNumber + " Your total bill was: " + totalBillPrompt + " Your final discounted bill is " + finalAmount);
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
@@ -100,3 +163,38 @@ var randomColor = colors[Math.floor(Math.random() * colors.length)];
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+var userConfirm = confirm("Would you like to enter a number?");
+if(userConfirm){
+    //true path, they want to enter a number
+
+	var userNumInput = prompt("Please enter a number.");
+	console.log("user entered the following; " + userNumInput);
+
+    //checking to see if the user input is a number; isNaN == true if the value is not a number (like a string) so !isNaN ==> tell us if value is a number
+    var isNumber = !isNaN(userNumInput);
+	if(isNumber){
+        //true/happy path ==> user did input a number
+
+        //parse the input after confirmed that it is a number so we are working with correct data type
+        var userNumber = parseFloat(userNumInput);
+
+        //check to see if the number is even
+        var isEven = userNumber % 2 === 0;
+        console.log("The user's number is even: " + isEven);
+
+        //User ternary statement to determine the message, if even, use even message, if odd, use odd message
+        var evenMessage = (isEven) ? "Your number is even!" : "Your number is odd!";
+        alert(evenMessage);
+
+        //add and alert 100 to user number
+        alert(userNumber + 100);
+
+        //Use ternary statement to determine positive or negative
+        var posNegMessage = (userNumber >= 0) ? "Your number is positive" : "Your number is negative";
+        alert( posNegMessage);
+    } else {
+        // sad path ==> not a number
+        alert("Hey, that's not a number!");
+    }
+}
+
