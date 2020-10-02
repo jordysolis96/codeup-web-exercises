@@ -394,7 +394,6 @@ switch(pizzaPreference) {
         break;
 }
 
-
 //TODO: Write a switch statement that evaluates weather as the condition. Check for "rainy", "sunny", "snow", and a default case.
 
 
