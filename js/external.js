@@ -20,7 +20,7 @@ var total = Number(alert("Your total will be $" + (DaysLM * 3 + DaysBB * 3 + Day
 var Google = Number(prompt("How hours did you work ar google this week?"))
 var Amazon = Number(prompt("How hours did you work ar Amazon this week?"))
 var Facebook = Number(prompt("How hours did you work ar Facebook this week?"))
-var total = Number(alert("Your paycheck will be " + (Google * 400 + Amazon * 380 + Facebook * 350)))
+var total = Number(alert("Your paycheck will be $" + (Google * 400 + Amazon * 380 + Facebook * 350)))
 
 // part 3
 
