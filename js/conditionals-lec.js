@@ -392,7 +392,7 @@ switch(pizzaPreference) {
     default:
         alert(pizzaPreference + " isn't my favorite, but let's order some!");
         break;
-}
+}}
 
 //TODO: Write a switch statement that evaluates weather as the condition. Check for "rainy", "sunny", "snow", and a default case.
 
@@ -413,4 +413,3 @@ switch(pizzaPreference) {
 
 
 // 3) https://mdn.github.io/learning-area/javascript/building-blocks/simple-ternary.html
-
