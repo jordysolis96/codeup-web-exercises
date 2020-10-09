@@ -26,3 +26,8 @@ console.log(caseSensitive("HEllO wOrld"))
 console.log(caseSensitive("CAPITAl"))
 console.log(caseSensitive("lowercase"))
 console.log(caseSensitive("RanDom"))
+
+//write a function that turn a string into in array of words
+inputArray.forEach(function(element){
+   console.log(element)
+});
