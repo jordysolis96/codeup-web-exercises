@@ -21,7 +21,7 @@ block level elements take up the entire space of parent element(container)
 and also usually contains other elements
 
 2. What is an inline element? What is an example of an inline element?
-takes onlt the space bounded bt the tags that define the element, and usually contains only data or other inline elements
+takes only the space bounded bt the tags that define the element, and usually contains only data or other inline elements
 
 ### Attributes
 1. What is an attribute?
@@ -41,3 +41,88 @@ Experiment with the following elements. What are some things you notice about th
 *  Anchor Tag
 *  Images
 *  Tables
+========================================================================================================================
+# HTML Forms Pre Lesson
+1. What HTTP methods can we use in forms?
+GET and Post
+
+2. What happens if we do not specify a method?
+The GET method will be used
+
+3. What is a `GET` method?
+Used to request information without making any changes to data on the server
+
+4. What is a `POST` method?
+Used to make change to existing data on the server
+
+5. What is the `action` attribute used for?
+refers to the location that the form data should be sent
+
+6. What is a `query string`?
+Composed of key-value pairs
+
+7. How are query strings structured?
+ex. ?key1=value1&key2=value2&key3=value3
+-begins with question mark(?)followed my the key and equals sign, then the value
+followed by the next key to start the chain again
+
+8. How do we submit a form?
+In order to submit a form, the form must contain either a button, or input element, with a type attribute whose value is "submit".
+
+9. What are some common form input elements?
+-Text inputs
+-Text Areas
+-Checkboxes and Radio buttons
+-Selects
+-Hidden Inputs
+
+10. How can we use name and value attributes?
+In order for an input to be submitted, it must have a name attribute. The value of the name attribute will become the name of the key that corresponds to the value of the current input
+
+11. How do you disable an input?
+For selects, the disabled attribute can be added to individual option elements.
+
+12. How do you hide an input?
+<input type="hidden" name="user_id" value="432">
+
+13. What are `labels` used for?
+used to label form inputs
+
+Bonus
+* Describe the following:
+  *   Text Inputs
+  *   Text Areas
+  *   Checkbox and Radio Buttons
+  *   Selects
+  ======================================================================================================================
+ FORMS ACTIVITY 1 (10 minutes)
+ Consider the appropriate HTTP method (GET or POST) for the following user actions:
+ - A user navigates to https://google.com in their browser
+
+ - A user clicks on the view more button on an E-Commerce site
+ GET
+ - A user logs in to a web application
+ POST
+ - A user upvotes a YouTube video
+ POST
+ - A user deletes a comment
+ POsT
+ - A user searches for “Codeup” in Google
+ GET
+ - A user is redirected to the home page after logging out of an application
+ GET
+ - A user adds an item to a shopping cart on Amazon
+ POST
+ - A user re-sorts search engine results to display most recent to least recent results
+ GET
+ - A user clicks “not interested” on a house listing in a real estate app
+ POST
+ What are some other GET/POST actions you have experienced on the web?
+ google.comgoogle.com
+ Google
+ Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.
+
+
+
+
+
