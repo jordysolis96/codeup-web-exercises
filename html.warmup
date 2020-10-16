@@ -121,7 +121,20 @@ Bonus
  google.comgoogle.com
  Google
  Search the world's information, including webpages, images, videos and more. Google has many special features to help you find exactly what you're looking for.
+========================================================================================================================
 
+Conduct a peer review and answer the following questions about HTML forms:
+- What control is used to make a single choice from a list of mutually exclusive choices?
+Radio Buttons
+- What is used to select one, more than one, or no choices from a list of choices?
+Checkbox
+- What do you call a field for the input of a single line of text?
+Textbox
+- A field for the input of a single line of text, in which characters entered appear as bullets or asterisks?
+Password
+- This element represents a document section that contains interactive controls for submitting information to a web server.
+Collapse
+<form>
 
 
 
