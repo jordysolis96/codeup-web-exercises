@@ -21,7 +21,7 @@ fieldset {
     -webkit-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px 0 rgba(0,0,0,0.75);
     box-shadow: 10px 10px 5px 0 rgba(0, 0, 0, 0.75);
-    border: 0px;
+    border: 0;
     background-color: white;
     padding: 1em;
     /* There must be 1em between the content and the border of this element */
@@ -73,7 +73,7 @@ fieldset {
     /* See the example at: https://developer.mozilla.org/en-US/docs/Web/CSS/calc */
     /* HINT: Calculate based on the padding of the `.btn` class */
     /* HINT: Examples are available at: https://glitch.com/~input-button-width */
-    width: 100%;
+    /*width: 100%;*/
     padding-bottom: 4px;
     padding-top: 4px;
     margin-bottom: .5em;
