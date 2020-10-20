@@ -136,6 +136,17 @@ Password
 Collapse
 <form>
 
+========================================================================================================================
+Find the answers to the following questions:
+-What is the difference between an inline and a block element?
+Block can stretch to new lines and stretch as far as they need to.
+inline only takes up a single line and only takes up the space it needs to.
 
+-What does the float CSS property do?
+Allows a element to break free from the normal document flow and shift to the left or right as far as possible.
 
+-What is the default positioning for elements?
+Static
 
+Bonus: What does the clear CSS property do?
+Clears the floated element to the right, left, or both and send the float element to the bottom.
