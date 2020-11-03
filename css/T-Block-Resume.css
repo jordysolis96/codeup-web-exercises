@@ -15,6 +15,11 @@ ul{
     list-style: none;
 }
 
+h2{
+    color: dodgerblue;
+
+}
+
 li{
     color: black;
 }
@@ -22,3 +27,4 @@ hr{
     color: green;
     border-top: 5px solid darkolivegreen;
 }
+
