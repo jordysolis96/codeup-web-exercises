@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <title>Map Exercise</title>
     <script src="js/keys.js"></script>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css' rel='stylesheet'/>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+
 </head>
 <body>
 
@@ -14,17 +15,38 @@
     mapboxgl.accessToken = mapboxToken;
     var map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v9',
-        center: [-96.853060, 32.953710],
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-96.854832, 32.952746],
         zoom: 16,
     });
 
     var marker = new mapboxgl.Marker()
+        .setLngLat([-96.854832, 32.952746])
+        .addTo(map);
+    var popup = new mapboxgl.Popup()
+        .setHTML("<h1>Wendy's</h1>")
+        .addTo(map);
+
+    marker.setPopup(popup);
+    marker.togglePopup(popup);
+
+    var marker2 = new mapboxgl.Marker()
         .setLngLat([-96.853060, 32.953710])
         .addTo(map);
 
-    var popup = new mapboxgl.Popup()
+    var popup2 = new mapboxgl.Popup()
         .setHTML("<h1>Chipotle</h1>")
+        .addTo(map);
+
+    marker.setPopup(popup);
+    marker.togglePopup(popup);
+
+    var marker3 = new mapboxgl.Marker()
+        .setLngLat([-96.852531, 32.954801])
+        .addTo(map);
+
+    var popup3 = new mapboxgl.Popup()
+        .setHTML("<h1>Chick fil a</h1>")
         .addTo(map);
 
     marker.setPopup(popup);
