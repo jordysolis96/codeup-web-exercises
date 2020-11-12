@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery</title>
+</head>
+<body>
+<h1 id="header" class="codeup">Were using JQuery!</h1>
+<p id="ptag" class="">Using Jquery is a great way to interact with your web page without the headache of having to run through tons of javascript to do so.</p>
+<h1 id="header2" class="codeup">Benefits of using jQuery</h1>
+<ul id="un-list">
+    <li id="l1">having access to your styling elements on your JS</li>
+    <li id="l2">Added interaction abillity with event listeners</li>
+    <li id="l3">the more languages you know the more flexable of a developer</li>
+    <li id="l4">ITS JQUERY!</li>
+</ul>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script>
+    "use strict";
+
+    $(document).ready(function(){
+        var changeH1Color = function(){
+            $('h1').css('background-color', 'lightblue')
+        };
+        var changeBackH1Color = function(){
+            $('h1').css('background-color', 'white')
+        };
+        var font18 = function(){
+            $('p').css('font-size', '20px')
+        };
+        var redText = function(){
+            $('li').css('color', 'red')
+        };
+        var blackText = function(){
+            $('li').css('color', 'black')
+        };
+        $('h1').click(changeH1Color);
+        $('h1').dblclick(changeBackH1Color);
+        $('p').dblclick(font18);
+        $('li').hover(redText,blackText);
+    });
+</script>
+</body>
+</html>
+<!--This is jquery intro and mouse events exercise-->

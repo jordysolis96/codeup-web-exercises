@@ -150,3 +150,34 @@ Static
 
 Bonus: What does the clear CSS property do?
 Clears the floated element to the right, left, or both and send the float element to the bottom.
+
+
+
+
+========================================================================================================================
+
+Who is Jake Weary?
+
+An American actor, musician, singer-songwriter and music producer.
+
+What is jQuery?
+
+jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.
+
+Why use a locally stored copy of the jQuery source code vs. a CDN link?
+
+
+
+What is the difference between the return value of these two expressions?
+  1) document.getElementById(‘some-id’);
+  2) $(‘#some-id’)
+
+ there is no difference
+
+
+What determines if a given jQuery method will allow another jQuery method to be chained?
+jQuery syntax to target a DOM element is succinct, but what plain JavaScript method have we already explored in class that offers a similar succinctness?
+Use of the $(document).ready() method serves two primary purposes; what are they?
+What is the difference between these two statements, other than syntax?
+  1. jQuery(‘body’).css(‘color’, ‘red’);
+  2. $(‘body’).css(‘color’, ‘red’);
