@@ -28,6 +28,7 @@
                 konamiExecuted = true;
                 n = 0;
                 return false;
+                document.body.style.backgroundImage = "url('akuma.png')"
             }
         } else {
             n = 0;
@@ -37,10 +38,10 @@
     $(document).keydown(function (e) {
         $('body').on("keydown", function(e){
             var keycode = e.keyCode;
-
+            
             switch(keycode) {
                 case 38:
-                    $(this).css({'background':'grey'});
+                    $(this).css({'background':'blue'});
                     $("#keySound")[0].play();
                     break;
 
@@ -62,8 +63,9 @@
                     break;
 
                 case 65:
-                    $(this).css({'background':'red'});
+                    $(this).css({'background': 'red'});
                     break;
+
             }
 
         });

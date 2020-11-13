@@ -1,0 +1,112 @@
+body {
+    background-color: #67833a;
+}
+
+.invisible {
+    display: none;
+}
+
+/*.highlighted {*/
+/*    background-color: #9b954b;*/
+/*}*/
+
+#main-title {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+dd {
+    color: lightgrey;
+}
+
+dt {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 20px;
+    width: fit-content;
+}
+
+dl {
+    margin-left: 30px;
+}
+
+a {
+    text-decoration: none;
+    margin-right: 25px;
+    color: #144014;
+}
+
+li {
+    width: fit-content;
+}
+
+a:active {
+    color: #9b954b;
+}
+
+.li-highlight {
+    background-color: yellow;
+    width: fit-content;
+}
+
+ul {
+    display: none;
+}
+
+.bold-header {
+    font-weight: bold;
+}
+
+.li-text {
+    color: blue;
+}
+
+img {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.frame {
+    border: 5px solid brown;
+    height: fit-content;
+    width: fit-content;
+
+}
+
+div {
+    /*width: fit-content;*/
+}
+
+#gallery {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+button {
+    width: fit-content;
+    margin: 5px;
+}
+
+#gallery>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1>span {
+    color: #960000;
+}
+
+#delayed-msg {
+    position: fixed;
+    display: none;
+    top: 10%;
+    right: 5%;
+}
+
+button.close {
+    display: inline;
+    margin: 0;
+}
