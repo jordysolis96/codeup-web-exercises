@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Ajax Blog</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+<main>
+    <header>
+        <div id="main-heading">My Blog</div>
+    </header>
+    <nav>
+        <ul id="main-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">Archives</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Instagram</a></li>
+            <li id="twitter-link"><a href="" id="twitter-a">Twitter</a></li>
+        </ul>
+        <i class="fas fa-search"></i>
+        <input type="text" id="search-bar" name="search-bar" placeholder="Search...">
+    </nav>
+    <div id="posts"></div>
+</main>
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+        crossorigin="anonymous"></script>
+<script>
+    "use strict";
+    (function () {
+        $(document).ready(function () {
+            function blog() {
+                $.ajax('data/blog.json').done(function (resp) {
+                    console.log(resp);
+                    $(resp).each(function (index, element) {
+                        $('#posts').append("<div id='title'>" + "<h2>" + element.title + "</h2>");
+                        $('#posts').append("<p>" + element.content + "</p>");
+                        $('#posts').append("<div id='genre'>Genre: " + element.categories.join(', ') + "</div>");
+                        $('#posts').append("<div id='date'>" + element.date + "</div>" + "</div>");
+                    });
+                    $('#posts').append("<div id='memo'>Click on the 'My Blog' title to load recent blogs</div>");
+                });
+            }
+
+            blog();
+            $('#main-heading').click(function () {
+                $('#posts').html("");
+                blog();
+            });
+        });
+    })();
+</script>
+</body>
+</html>

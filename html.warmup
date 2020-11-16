@@ -181,3 +181,12 @@ Use of the $(document).ready() method serves two primary purposes; what are they
 What is the difference between these two statements, other than syntax?
   1. jQuery(‘body’).css(‘color’, ‘red’);
   2. $(‘body’).css(‘color’, ‘red’);
+
+
+ What is AJAX and what is it used for?
+ What is JSON and what is it used for?
+ Can methods be included in a JSON file?
+ What does ‘jqXhr’ represent in the curriculum AJAX examples?
+ What’s the difference between $.ajax() and $.get()?
+ Is jQuery required to make AJAX requests?
+ (optional) What possible real world example can you think of where AJAX might be used?
