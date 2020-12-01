@@ -1,0 +1,24 @@
+================================= JAVA INTRO READING QUESTIONS
+
+What is the difference between a .java and .class file?
+
+
+Why are we using an IDE (IntelliJ) instead of a simple text editor for writing Java code?
+
+
+What is the difference between a JRE and a JDK?
+JRE- necessary to run Java applications
+JDK- necessary to create and build Java applications
+
+Are we currently learning about JavaSE, JavaEE, JavaME, or JavaFX?
+-JavaSE and JavaEE
+
+What are some key differences between JavaScript and Java?
+- Java is compiled while JavaScript is interpreted.
+- Java is statically typed while JavaScript has dynamic typing.
+- While JavaScript does have objects, there is much more focus on them in Java, and the way they are defined and used is quite different.
+- JavaScript runs (mostly) in the browser, while Java runs almost everywhere.
+
+Describe in some detail the process by which a Java program is able to run on an operating system.
+
+Why is Java touted as a “write once, run anywhere” language?

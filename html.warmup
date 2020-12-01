@@ -190,3 +190,31 @@ What is the difference between these two statements, other than syntax?
  What’s the difference between $.ajax() and $.get()?
  Is jQuery required to make AJAX requests?
  (optional) What possible real world example can you think of where AJAX might be used?
+
+
+
+ ==============================JS PROMISE================================
+ What are JS promises?
+Represents an event that might not yet have happened
+
+ What are the three states of a promise?
+pending
+resolved
+rejected
+
+ Why are they useful?
+
+
+ How can a JS promise be ‘handled’?
+
+
+ What is promise chaining?
+the return value from a promise's callback can itself be treated as a promise which allows us to chain promises together
+
+ How do JS promises relate to what we have covered at Codeup previously?
+it can be like like a if else statement
+
+ What is the difference between Promise.all() and Promise.race()?
+promise.all accepts an array of promises, and resolves when all the individual promises have resolved. Promise.race also accepts an array but resolves when the first promise resolves
+
+ How do promises relate to the Fetch API?
