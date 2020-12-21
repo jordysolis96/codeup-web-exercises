@@ -4,7 +4,7 @@ What is the difference between a .java and .class file?
 
 
 Why are we using an IDE (IntelliJ) instead of a simple text editor for writing Java code?
-
+will compile things for you
 
 What is the difference between a JRE and a JDK?
 JRE- necessary to run Java applications
